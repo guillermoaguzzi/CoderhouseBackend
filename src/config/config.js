@@ -6,6 +6,7 @@ const {
     API_VERSION,
     NODE_ENV,
     ORIGIN,
+    DB_USER,
     DB_PASSWORD,
     GITHUB_CLIENT_ID,
     GITHUB_CLIENT_SECRET,
