@@ -1,4 +1,4 @@
-const ProductDao = require("../Daos/products.Dao");
+const ProductDao = require("../daos/products.Dao");
 const { generateProducts } = require("../utils/mocks/generate.products");
 const MailingService = require("./mailing.service");
 const { EnumErrors, HttpResponse } = require("../middleware/errors.middleware");
