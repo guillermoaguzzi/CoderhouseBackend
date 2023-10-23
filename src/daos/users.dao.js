@@ -18,7 +18,6 @@ class UserDao {
     }
 
     async updateUserById(uid, userData) {
-        console.log("aqui aqui")
         return userModel.updateOne({ _id: uid }, { $set: userData });
     }
 

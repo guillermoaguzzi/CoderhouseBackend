@@ -116,7 +116,7 @@ class ProductService {
 
   deleteProductById = async (pid) => {
     const product = await this.productDao.deleteProductById(pid);
-    console.log("product: ", product);
+
     if (product.createdBy.role === "PREMIUM") {
       const emailAdress = product.createdBy.user;
 

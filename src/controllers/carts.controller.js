@@ -112,7 +112,7 @@ class CartCtrl {
                     message: `${EnumErrors.CONTROLLER_ERROR} - ${error.message}`,
                 });
             }else {
-                console.log("updatedCart: ", updatedCart);
+
             return res.json({
                 message: `cart ID ${req.params.cid} successfully updated`,
                 cart: updatedCart,

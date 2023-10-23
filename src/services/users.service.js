@@ -113,7 +113,7 @@ class userService {
         console.log("updateUserById from REPOSITORY executed");
 
         const newRole = userData.role || null;
-        console.log("newRole: ", newRole)
+
         if (newRole !== null && !["ADMIN", "PREMIUM", "USER", "PUBLIC"].includes(newRole)) {
             return {
                 success: false,
@@ -165,7 +165,6 @@ class userService {
             };
             }
 
-            console.log("user: ", user)
         if(user.cart){
             await this.cartDao.deleteCartById({ _id: user.cart._id.toString() });
         }

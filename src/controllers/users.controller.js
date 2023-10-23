@@ -18,7 +18,7 @@ class UserCtrl {
         try {
             const userForRepository = req.session.email;
             const user = await this.userService.currentUser(req, res);
-            console.log("user: ", user)
+
             return res.json({ message: `Current user`, user});
         } catch (error) {
         return res.status(500).json({ message: error.message });
