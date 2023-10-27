@@ -13,7 +13,7 @@ const swaggerOpts = {
         },
         servers: [
             {
-                url: `https://coderhousebackend-${NODE_ENV}-${DEV_URL}.up.railway.app/api/v1`,
+                url: `https://coderhousebackend-${NODE_ENV}-${PROD_URL}.up.railway.app/api/v1`,
             },
         ],
     },
