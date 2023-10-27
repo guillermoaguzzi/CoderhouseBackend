@@ -5,6 +5,8 @@ config({ path: `.env.${process.env.NODE_ENV || "development"}.local` });
 const {
     API_VERSION,
     NODE_ENV,
+    DEV_URL,
+    PROD_URL,
     ORIGIN,
     DB_USER,
     DB_PASSWORD,
@@ -22,6 +24,8 @@ const {
 module.exports = {
     API_VERSION,
     NODE_ENV,
+    DEV_URL,
+    PROD_URL,
     ORIGIN,
     DB_USER,
     DB_PASSWORD,

@@ -92,7 +92,7 @@ class App {
             store: mongoStore.create({
                 mongoUrl: this.MONGO_URL,
                 mongoOptions: { useNewUrlParser: true, useUnifiedTopology: true },
-                ttl: 60,
+                ttl: 1800,
             }),
             secret: "secretS3ss10n",
             resave: false,
